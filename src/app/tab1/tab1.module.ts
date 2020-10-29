@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { NotesComponent } from '../notes/notes.component';
 import { DisplayNotesComponent } from '../notes/display-notes/display-notes.component';
+import { AddNoteComponent } from '../notes/add-note/add-note.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { DisplayNotesComponent } from '../notes/display-notes/display-notes.comp
     Tab1PageRoutingModule,
     
   ],
-  declarations: [Tab1Page, NotesComponent, DisplayNotesComponent]
+  declarations: [Tab1Page, NotesComponent, DisplayNotesComponent, AddNoteComponent]
 })
 export class Tab1PageModule {}

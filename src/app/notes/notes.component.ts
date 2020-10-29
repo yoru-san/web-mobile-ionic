@@ -7,8 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class NotesComponent implements OnInit {
 
-  public note: string;
-  @Output() noteEvent = new EventEmitter<string>();
+  public notes: string[] = [];
 
   constructor() { }
 
@@ -16,10 +15,11 @@ export class NotesComponent implements OnInit {
 
   }
 
-  addNote() {
-    console.log(this.note);
-    if (this.note !== "") {
-      this.noteEvent.emit(this.note);
+  add(note: string) {
+    console.log('pouet ' + note);
+    
+    if (note !== "") {
+      this.notes.push(note);
     }
   }
 }

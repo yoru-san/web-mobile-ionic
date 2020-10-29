@@ -7,19 +7,9 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class DisplayNotesComponent implements OnInit {
 
-  @Input() noteEvent = new EventEmitter<string>();
-
-  public notes: string[] = [];
+  @Input() listNotes: string[];
 
   constructor() { }
 
   ngOnInit() { }
-
-  addNoteToDisplay(note: string) {
-    console.log('pouet ' + note);
-    
-    if (note !== "") {
-      this.notes.push(note);
-    }
-  }
 }
