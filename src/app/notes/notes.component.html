@@ -1,0 +1,11 @@
+
+<div class="add-note">
+  <h1>Ajout de notes :</h1>
+  <ion-item>
+    <ion-label>Votre note</ion-label>
+    <ion-input [(ngModel)]="note"></ion-input>
+  </ion-item>
+  <ion-button (click)="addNote()" color="primary">Ajouter</ion-button>
+</div>
+
+<app-display-notes (noteEvent)=addNoteToDisplay($event)></app-display-notes> 

@@ -5,7 +5,7 @@ import { Tab1Page } from './tab1.page';
 const routes: Routes = [
   {
     path: '',
-    component: Tab1Page,
+    component: Tab1Page
   }
 ];
 
@@ -14,3 +14,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class Tab1PageRoutingModule {}
+
+
+//Imbrication de composant
+//Ajout de note
